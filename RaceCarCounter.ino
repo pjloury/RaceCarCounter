@@ -188,14 +188,6 @@ void loop() {
     //    startTime();
 
   }
-//  else if(buttonState2 == LOW){
-//    stop = getTime();
-//    lcd.clear();
-//    lcd.setCursor(0,1);
-//    lcd.print("Time Elapsed:");
-//    //lcd.setCursor(3,1);
-//    lcd.print((stop-start)); 
-//  }
  
  
  if(raceMode){
@@ -207,61 +199,7 @@ void loop() {
     }
     
     pong();
-    //usr();
-    
-//    if(lapSensor == 0){
-//
-//      lcd.setCursor(0,1);
-//      lcd.print("Lap ");
-//      lcd.print(lapCounter);
-//      lcd.print(": ");
-//      
-//      if(lapCounter == 1)previousLap = start; //previousLap in MILLIS TIME
-//      thisLap = getTime();
-//      lapTime = thisLap - previousLap;
-//      previousLap = thisLap;
-//      //store the Fastest Lap this Run
-//      if(lapTime < previousLapTime)bestLap = lapTime;
-//      previousLapTime = lapTime; 
-//      lcd.print(lapTime);
-//      
-//      //Check for Best Ever
-//      if(lapTime<trackRecordLap)victory();
-//      
-//      //At End of Race      
-//      if(lapCounter >= 10){
-//        lcd.clear();
-//        double stop = getTime();
-//        double total = stop-start;
-//        lcd.home();
-//        lcd.print("Time: ");
-//        lcd.print(total);
-//        lcd.setCursor(0,1);
-//        lcd.print("Best Lap: ");
-//        //Case for Broken Record       
-//        if(bestLap<trackRecordLap){
-//          for(int i =0; i<10; i++){
-//          lcd.clear();
-//          lcd.print("Time: ");
-//          lcd.print(total);
-//          lcd.setCursor(0,1);
-//          lcd.print("Best Lap: ");
-//          lcd.print(bestLap);
-//          delay(500);
-//          lcd.clear();
-//          lcd.print("Time: ");
-//          lcd.print(total);
-//          lcd.setCursor(0,1);
-//          delay(250);}  }
-//        else{lcd.print(bestLap);
-//        }
-//        raceMode = false;
-//      }//end of At End of Race
-//      
-                                  //      delay(100);     
-//      lapCounter++;
-//      
-//    }//end if lapSensor
+
     
     refresh = false;
                                 //delay(10);
